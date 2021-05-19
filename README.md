@@ -1,4 +1,6 @@
 
+[![describtor - e.g. python version](https://img.shields.io/badge/Python%20Version->=3.6-blue)](www.desired_reference.com)
+
 Alt-Classification Benchmarks
 ===
 
@@ -92,13 +94,13 @@ There are 2 scripts to run. Each has a number of command-line parameters which c
 **Logistic Regression Classifier: Script lr-mnist.py**
 
 ___Parameter options = 3___
-
+```
 | Letter call   | Are             | Required?| Input Type   | Description
 | ------------- |:-------------:  |:--------:|:-------------:
 |`-t`           | `--test_size`   | Yes      | Float        | Decimal between 0 and 1 indicating the test size        |
 |`-o`           | `--output_path` | Yes      | String       | String indicating path to the output directory          |
 |`-f`           | `--filename`    | No       | String       | String indicating what the output file should be called |
-
+```
 
 ___default filename: logistic_regression_classification_report.csv___
 
