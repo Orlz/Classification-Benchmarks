@@ -1,7 +1,7 @@
 
 [![describtor - e.g. python version](https://img.shields.io/badge/Python%20Version->=3.6-blue)](www.desired_reference.com)
 
-Alt-Classification Benchmarks
+Classification Benchmarks
 ===
 
 **Comparing a Logistic Regression and simple Neural Network Classifier on MNIST data**
