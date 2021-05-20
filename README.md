@@ -1,9 +1,15 @@
 
-[![describtor - e.g. python version](https://img.shields.io/badge/Python%20Version->=3.6-blue)](www.desired_reference.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![describtor - e.g. python version](https://img.shields.io/badge/Python%20Version->=3.6-blue)](www.desired_reference.com)
 
 # Classification Benchmarks
 
 **Comparing a Logistic Regression and simple Neural Network Classifier on MNIST data**
+
+
+
+<div align="center"><img src="https://github.com/Orlz/CDS_Visual_Analytics/blob/main/Portfolio/neural.png" width="100" height="100"/></div>
+
+
 
 
 __Background to the assignment__
