@@ -38,15 +38,21 @@ The assignment takes the form of 2 python scripts which should be called dirctly
 **lr-mnist.py**  This script uses multinomial logistic regression to classify images of handwritten digits into their correct digit group (0:9)
 
 
+
 **nn-mnist.py**  This script employs a neural network to classify the same images of handwritten digits into their correct digit group (0:9)
 
+
 Each script has a number of ammendable parameters which can be set in the command line. These are described below. 
+
+
 
 __Data__ 
 The data used is the MNIST data found on openml. It is pulled directly from open online sources and so no additional data needs to be added into the script.
 
+
 This is a subset of the larger NIST file which contains 60,000 images of handwritten digits with 784 features. 
 Information regarding this dataset can be found [here](https://www.openml.org/d/554)
+
 
 
 
@@ -55,9 +61,12 @@ Information regarding this dataset can be found [here](https://www.openml.org/d/
 
 This problem was interested in creating simple classification benchmarks from which model evaluation could be considered. To do this, two classifier scripts were built to classify images of handwritten digits: a logistic regression classifier and a simple neural network classifier. In both scripts, the data was pulled directly from sklearn using the fetch_openml() function, transformed into a numerical NumPy array, and split into a train and test set using  sklearns’s train_test_split function. The pixels were then scaled to lie between 0 and 1, to enable convergence within the model. 
 
+
 The multinomial logistic regression model was built using sklearn’s LogisticRegression() function with the saga algorithm used, which works well when the number of samples is significantly larger than the number of features - as is the case here. Predictions were made using sklearn’s predict functions and the classification_report() function created a readable report of the classifiers accuracy, which was stored in the out folder. 
 
+
 The neural network classifier had an additional step of pre-processing where the labels were binarized and argparse arguments created the ability for the user to choose how many hidden layers the model was to be run with. The model was then fit using the NeuralNetwork class found in the neural_network.py script (found in the utils folder), and predictions were made using the predict function found in the same script. A report for this model was also created using sklearn’s classification_report function. 
+
 
 
 ## Operating the Scripts
@@ -68,9 +77,11 @@ There are 3 steps to take to get your script up and running:
 2. Create a virtual environment (Computer_Vision02) 
 3. Run the 2 scripts using command line parameters
 
+
 ___Output will be saved in a new folder called Output___
 
-__1. Clone the repository__ 
+
+#### 1. Clone the repository
 
 The easiest way to access the files is to clone the repository from the command line using the following steps 
 
@@ -81,7 +92,7 @@ git clone https://github.com/Orlz/Classification-Benchmarks.git
 ```
 
 
-__2. Create the virtual environment__
+#### 2. Create the virtual environment
 
 You'll need to create a virtual environment which will allow you to run the script using all the relevant dependencies. This will require the requirements.txt file attached to this repository. 
 
@@ -98,13 +109,15 @@ $ source Computer_Vision02/bin/activate
 ```
 
 
-__3. Run the Scripts__
+#### 3. Run the Scripts
 
 
 There are 2 scripts to run. Each has a number of command-line parameters which can be set by the user. The options for these are as follows: 
 
 
-**Logistic Regression Classifier: Script lr-mnist.py**
+
+
+### Logistic Regression Classifier: Script lr-mnist.py
 
 
 ___Parameter options = 3___
@@ -122,7 +135,9 @@ Letter call   | Are             | Required?| Input Type   | Description
 ___default filename: logistic_regression_classification_report.csv___
 
 
-**Neural Network Classifier: Script nn-mnist.py**
+
+
+### Neural Network Classifier: Script nn-mnist.py
 
 
 ___Parameter options = 5___
