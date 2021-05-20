@@ -108,12 +108,14 @@ There are 2 scripts to run. Each has a number of command-line parameters which c
 
 
 ___Parameter options = 3___
+
+
 ```
-| Letter call   | Are             | Required?| Input Type   | Description
-| ------------- |:-------------:  |:--------:|:-------------:
-|`-t`           | `--test_size`   | Yes      | Float        | Decimal between 0 and 1 indicating the test size        |
-|`-o`           | `--output_path` | Yes      | String       | String indicating path to the output directory          |
-|`-f`           | `--filename`    | No       | String       | String indicating what the output file should be called |
+Letter call   | Are             | Required?| Input Type   | Description
+------------- |:-------------:  |:--------:|:-------------:
+`-t`          | `--test_size`   | Yes      | Float        | Decimal between 0 and 1 indicating the test size        |
+`-o`          | `--output_path` | Yes      | String       | String indicating path to the output directory          |
+`-f`          | `--filename`    | No       | String       | String indicating what the output file should be called |
 ```
 
 
@@ -125,7 +127,7 @@ ___default filename: logistic_regression_classification_report.csv___
 
 ___Parameter options = 5___
 
-
+```
 | Letter call   | Are             | Required?| Input Type   | Description
 | ------------- |:-------------:  |:--------:|:-------------:
 |`-t`           | `--test_size`   | Yes      | Float        | Decimal between 0 and 1 indicating the test size              |
@@ -133,7 +135,7 @@ ___Parameter options = 5___
 |`-f`           | `--filename`    | No       | String       | String indicating what the output file should be called       |
 |`-e`           | `--epochs`      | No       | Integer      | Integer indicating number of epochs to run with (default: 10) |
 |`-l`           | `--layers`      | No       | Integer      | Integer indicating the number of hidden layers (default: 3)   |
-
+```
 
 
 Below is an example of the command line arguments for the logistic regression model with an 80:20 split: 
