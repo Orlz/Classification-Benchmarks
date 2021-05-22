@@ -157,7 +157,7 @@ Below is an example of the command line arguments for the logistic regression mo
 
 
 ```bash
-python3 lr-mnist.py -t 0.2 
+python3 src/lr-mnist.py -t 0.2 
 ```
 
 
