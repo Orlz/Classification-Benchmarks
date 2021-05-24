@@ -31,7 +31,7 @@ import argparse
 # image manipulation and utility functions
 import pandas as pd
 import numpy as np
-import utils.classifier_utils as clf_util
+import Classification_benchmarks.utils.classifier_utils as clf_util
 
 #Sklearn metrics  
 from sklearn import metrics
