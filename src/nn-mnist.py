@@ -34,7 +34,7 @@ import numpy as np
 import argparse
 
 # Neural Network utility functions  
-from utils.neuralnetwork import NeuralNetwork
+from Classification_benchmarks.utils.neuralnetwork import NeuralNetwork
 
 #Neural network dependencies and data from sklearn
 from sklearn.datasets import fetch_openml
